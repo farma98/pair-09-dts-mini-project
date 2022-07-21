@@ -39,7 +39,7 @@ function Copyright(props) {
 const LoginRegisterForm = ({ loginRegister }) => {
   const navigate = useNavigate();
 
-  const [user, isLoading, error] = useAuthState(auth);
+  const [user, isLoading] = useAuthState(auth);
 
   const [credential, setCredential] = useState({
     email: "",
